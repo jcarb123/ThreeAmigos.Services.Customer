@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "ThreeAmigos.Services.ProductCatalogue.API": {
+    "ThreeAmigos.Services.Orders.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

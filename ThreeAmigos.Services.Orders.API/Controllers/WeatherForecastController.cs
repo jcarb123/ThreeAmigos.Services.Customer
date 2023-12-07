@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace ThreeAmigos.Services.ProductCatalogue.API.Controllers;
+namespace ThreeAmigos.Services.Orders.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -8,7 +8,7 @@ public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
     {
-        "Customer Service"
+        "Orders Service"
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
