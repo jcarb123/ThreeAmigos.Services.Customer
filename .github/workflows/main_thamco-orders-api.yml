@@ -1,4 +1,4 @@
-name: Build, Test & Deploy ASP.Net Core app to Azure Web App - thamco-customer-api
+name: Build, Test & Deploy ASP.Net Core app to Azure Web App - thamco-orders-api
 
 on:
   push: {}
@@ -11,7 +11,7 @@ on:
 env:
   DOTNET_VERSION: 6.0.x
   BUILD_CONFIGURATION: Release
-  PROJECT_PATH: ./ThreeAmigos.Services.Customer.API
+  PROJECT_PATH: ./ThreeAmigos.Services.Orders.API
   PUBLISH_PATH: ./myapi
   TESTRESULTS_PATH: ./unit-test-results
 
@@ -77,7 +77,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'thamco-customer-api-test'
+          app-name: 'thamco-orders-api-test'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ${{ env.PUBLISH_PATH }}  
 
@@ -100,6 +100,6 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'thamco-customer-api-live'
+          app-name: 'thamco-orders-api-live'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ${{ env.PUBLISH_PATH }}  
