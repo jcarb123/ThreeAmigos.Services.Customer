@@ -7,7 +7,7 @@
 
         <IsPackable>false</IsPackable>
 
-        <RootNamespace>ThreeAmigos.Services.ProductCatalogue.UnitTests</RootNamespace>
+        <RootNamespace>ThreeAmigos.Services.Orders.UnitTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

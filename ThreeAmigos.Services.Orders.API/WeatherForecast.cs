@@ -1,4 +1,4 @@
-namespace ThreeAmigos.Services.ProductCatalogue.API;
+namespace ThreeAmigos.Services.Orders.API;
 
 public class WeatherForecast
 {

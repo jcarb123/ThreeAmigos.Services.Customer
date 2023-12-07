@@ -1,4 +1,4 @@
-namespace ThreeAmigos.Services.ProductCatalogue.UnitTests;
+namespace ThreeAmigos.Services.Orders.UnitTests;
 
 public class UnitTest1
 {
